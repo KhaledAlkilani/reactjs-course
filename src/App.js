@@ -1,12 +1,16 @@
 import React from "react"
-import {Header, Container, Footer} from './components/index'
+import {Container} from './components/index'
+import {Header, Footer, Hero, MostPopular} from './sections/index'
 import './App.css'
 
 function App() {
   return (
     <>
     <Header />
-    <Container>Content</Container>
+    <Container>
+      <Hero/>
+      <MostPopular/>
+    </Container>
     <Footer />
     </>
   );
