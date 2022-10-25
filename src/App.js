@@ -1,6 +1,6 @@
 import React from "react"
 import {Container} from './components/index'
-import {Header, Footer, Hero, MostPopular} from './sections/index'
+import {Header, Footer, Hero, MostPopular, GamingLibrary} from './sections/index'
 import './App.css'
 
 function App() {
@@ -8,8 +8,9 @@ function App() {
     <>
     <Header />
     <Container>
-      <Hero/>
-      <MostPopular/>
+      {/* <Hero/> */}
+      {/* <MostPopular/> */}
+      <GamingLibrary/>
     </Container>
     <Footer />
     </>
