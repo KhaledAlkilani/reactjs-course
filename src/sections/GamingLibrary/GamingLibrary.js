@@ -14,7 +14,7 @@ const GamingLibrary = () => {
     <>
     <SectionWrapper>
         <SectionHeader>Gaming Library</SectionHeader>
-        <div className='most-popular-items'>
+        <div className='gaming-library-cards'>
             {cards}
         </div>
         </SectionWrapper>

@@ -8,8 +8,8 @@ function App() {
     <>
     <Header />
     <Container>
-      {/* <Hero/> */}
-      {/* <MostPopular/> */}
+      <Hero/>
+      <MostPopular/>
       <GamingLibrary/>
     </Container>
     <Footer />
