@@ -1,6 +1,6 @@
 import React from 'react'
 import './MostPopular.css'
-import {SectionHeader, SectionWrapper, Card} from '../../components/index'
+import {SectionHeader, SectionWrapper, Card} from '../../components'
 import mostPopularData from '../../Data/MostPopularData'
 
 const MostPopular = () => {

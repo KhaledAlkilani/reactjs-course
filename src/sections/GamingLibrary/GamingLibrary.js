@@ -1,13 +1,13 @@
 import React from 'react'
 import './GamingLibrary.css'
-import {SectionHeader, SectionWrapper, GamingLibraryCard} from '../../components/index'
+import {SectionHeader, SectionWrapper, GamingLibraryCard} from '../../components'
 import gamingLibraryData from '../../Data/GamingLibraryData'
 
 
 const GamingLibrary = () => {
 
     const cards = gamingLibraryData.map(card => {
-        return <GamingLibraryCard key={card.id} Card  image={card.image} title={card.title} category={card.category} hours_played={card.hours_played} download={card.download}/>
+        return <GamingLibraryCard key={card.id} Card  image={card.image} title={card.title} category={card.category} date_added={card.date_added} hours_played={card.hours_played} download={card.download}/>
       })
 
   return (

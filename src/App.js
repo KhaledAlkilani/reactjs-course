@@ -1,18 +1,25 @@
 import React from "react"
 import {Container} from './components/index'
-import {Header, Footer, Hero, MostPopular, GamingLibrary} from './sections/index'
+import {Header, Footer} from './sections/index'
+import {Home, Profile} from './Pages/index'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css'
 
 function App() {
   return (
     <>
+    <Router>
     <Header />
     <Container>
-      <Hero/>
-      <MostPopular/>
-      <GamingLibrary/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/profile" element={<Profile/>}/>
+      </Routes>
     </Container>
-    <Footer />
+    <Footer/>
+    </Router>
     </>
   );
 }
